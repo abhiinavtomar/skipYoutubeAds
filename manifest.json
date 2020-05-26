@@ -1,0 +1,11 @@
+{
+  	"manifest_version": 2,
+  	"name": "Skip Youtube Ad",
+  	"description": "Skips YouTube Ads for you.",
+  	"version": "1.0",
+	"icons": { "128": "icon128.png" },
+	"content_scripts": [{
+      		"matches": ["https://*.youtube.com/*"],
+      		"js": ["skipYoutubeAds.js"]
+    	}]
+}
